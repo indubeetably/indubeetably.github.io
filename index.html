@@ -39,14 +39,14 @@
   
   <script>
   function setBoolean() {
-    actuator = 1;
+    var actuator = 1;
     alert("Check to see if function is triggered");
   }
   </script>
   
   
   <?php
-      if('actuator' == 1) {
+      if('actuator') !== FALSE {
               function printCSV();
           }
           else if(array_key_exists('actuator', 1)) {
