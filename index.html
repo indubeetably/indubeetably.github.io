@@ -46,13 +46,21 @@
   
   
   <?php
+  $bool = true;
+  if ($bool) {
+      $hi = 'Hello to all people!';
+  }
+  echo $hi;
+  ?>
+  
+  <!-- <?php
       if(1 == $actuator) {
               function printCSV();
           }
           else if(array_key_exists('actuator', 1)) {
               function printCSV1();
           }
-  else {alert("Check in PHP loop")};
+            else {alert("Check in PHP loop")};
            function printCSV() {
               echo "This is actuator that is selected SHetjet";
           }
