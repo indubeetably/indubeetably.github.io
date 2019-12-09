@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Coming Soon - Start Bootstrap Theme</title>
+  <title>Hall of Fame Predictions</title>
   <!-- Function to get name
   <script type = "text/javascript">
   function getBallerPredictions(){
@@ -26,9 +26,12 @@
   </script>
   
   <?php
-  function msg() {
-    alert("Check to see if function is triggered");
-  }
+      if(array_key_exists('button1', $_POST)) {
+          button1();
+      }
+      function msg() {
+        alert("Check to see if function is triggered");
+      }
   ?>
   
   
