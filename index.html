@@ -72,6 +72,18 @@
       const papa = require('papaparse');
       const file = fs.createReadStream('HallOfFame.csv');
       var count = 0; // cache the running count
+      
+      Papa.parse('../challanges.csv', {
+        header: true,
+        download: true,
+        dynamicTyping: true,
+        complete: function(results) {
+          console.log(results);
+          data = results.data;
+        }
+      });
+      
+      
       papa.parse(file, {
           worker: true, // Don't bog down the main thread if its a big file
           step: function(result) {
@@ -79,6 +91,7 @@
           },
           complete: function(results, file) {
               console.log('parsing complete read', count, 'records.');
+                 alert("parsing complete read");
           }
       });
       }
