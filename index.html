@@ -20,12 +20,33 @@
     }
   </script> -->
   
+  
+  <?php
+    print <<< HERE
+    <table border = "1">
+    <tr>
+     <th>First</th>
+     <th>Last</th>
+     <th>email</th>
+     <th>phone</th>
+    </tr>
+  HERE;
   $data = file("temp_mlb_predictions.csv");
-
-  <script>
+  #<?php
+      #<script>
       function getBallerPredictions(){
           foreach($data as $i => $item)
           {
+            $lineArray = explode("t", $line);
+              list($fName, $lName, $email, $phone) = $lineArray;
+              print <<< HERE
+               <tr>
+               <td>$fName</td>
+               <td>$lName</td>
+               <td>$email</td>
+               <td>$phone</td>
+               </tr>
+            HERE;
             if($data[$i]['filename’]==ballerName)
                 {
                    echo $data[$i]['ballerName'];
@@ -37,9 +58,10 @@
                    alert("Hello worldo!");
                          }
                    }
+               print "</table> n";
         }
-  </script>
-  
+               #</script>
+  ?>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
