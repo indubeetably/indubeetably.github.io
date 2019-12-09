@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
   <title>Coming Soon - Start Bootstrap Theme</title>
-  <!-- Function to get name -->
+  <!-- Function to get name
   <script type = "text/javascript">
   function getBallerPredictions(){
     var ballerName = document.getElementById(“ballerName");
@@ -18,6 +18,24 @@
     var percentage = ballerName.value;
     txtOutput.value = ”The chance of " + name + “making the Hall of Fame is” + percentage
     }
+  </script> -->
+  
+  $data = file("temp_mlb_predictions.csv");
+
+  <script>
+  function getBallerPredictions(){
+  foreach($data as $i => $item)
+  {
+    if($data[$i]['filename’]==ballerName)
+    {
+    echo $data[$i]['ballerName'];
+    }
+    else
+    {
+    echo
+    }
+  }
+  }
   </script>
   
 
@@ -54,7 +72,7 @@
               <input type="text" class="form-control" placeholder="Type Player's Last Name..." aria-label="Type Player's Last Name..." aria-describedby="basic-addon" id = "ballerName">
               <div class="input-group-append">
                 <button class="btn btn-secondary" type="button">Click for Predictions!</button>
-                <!-- document.getElementById("ballerName").onclick = function() {getBallerPredictions()}; -->
+                 <button onclick="getBallerPredictions()">Click for Predictions!</button>
               </div>
             </div>
           </div>
