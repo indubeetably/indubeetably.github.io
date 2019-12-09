@@ -38,6 +38,7 @@
   </script>
   
   <?php
+      function printCSV(){
       if(array_key_exists('actuator', $_POST)) {
               msgButton1();
           }
@@ -50,6 +51,7 @@
           function msgButton2() {
               echo "This is actuator that is selected again";
           }
+      }
       ?>
   
   
@@ -138,7 +140,7 @@
               <input type="text" id = "ballerName" name="name" class="form-control" placeholder="Type Player's Last Name..." aria-label="Type Player's Last Name..." aria-describedby="basic-addon">
             
               <div class="input-group-append">
-                <button class="btn btn-secondary" type="button" name="actuator" onclick="msg()">Click for Predictions!</button>
+                <button class="btn btn-secondary" type="button" name="actuator" onclick="printCSV()">Click for Predictions!</button>
             </form>
                  <!-- <button onclick="getBallerPredictions()">Click for Predictions!</button>-->
                  <!-- <input type="button" onclick="getBallerPredictions()" value="Click Me!">
