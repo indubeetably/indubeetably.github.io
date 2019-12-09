@@ -23,19 +23,21 @@
   $data = file("temp_mlb_predictions.csv");
 
   <script>
-  function getBallerPredictions(){
-  foreach($data as $i => $item)
-  {
-    if($data[$i]['filename’]==ballerName)
-    {
-    echo $data[$i]['ballerName'];
-    }
-    else
-    {
-    echo
-    }
-  }
-  }
+      function getBallerPredictions(){
+          foreach($data as $i => $item)
+          {
+            if($data[$i]['filename’]==ballerName)
+                {
+                   echo $data[$i]['ballerName'];
+                   alert("Hello world!");
+                   }
+                   else
+                   {
+                   alert("Hello worldo!");
+                         }
+                   }
+                         
+        }
   </script>
   
 
