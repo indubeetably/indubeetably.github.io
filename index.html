@@ -25,9 +25,10 @@
   }
   </script>
   
-  <script>
-  function printCSV(){
+  
+  
   <?php
+  function printCSV(){
   $row = 1;
   if (($handle = fopen("HallOfFame.csv", "r")) !== FALSE) {
       while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
@@ -40,9 +41,10 @@
       }
       fclose($handle);
   }
-  ?>
   }
-  </script>
+  ?>
+  
+  
   
   
   <?php
