@@ -26,10 +26,10 @@
   </script>
   
   <?php
-      if(array_key_exists('actuator', $_POST)) {
+      if(array_key_exists('button1', $_POST)) {
               button1();
           }
-          else if(array_key_exists('actuator', $_POST)) {
+          else if(array_key_exists('button1', $_POST)) {
               button2();
           }
           function button1() {
@@ -126,16 +126,16 @@
             <form method="post">
               <div class="input-group-append">
                 <button class="btn btn-secondary" type="button" name="actuator" onclick="printCSV()">Click for Predictions!</button>
-            </form>
-                 <!-- <button onclick="getBallerPredictions()">Click for Predictions!</button>-->
-                 <!-- <input type="button" onclick="getBallerPredictions()" value="Click Me!">
+            <!-- </form>
+                 <button onclick="getBallerPredictions()">Click for Predictions!</button>-->
+                 <!-- <input type="button" onclick="getBallerPredictions()" value="Click Me!">-->
                  <form method="post">
                      <input type="submit" name="button1"
                              class="button" value="Button1" />
                        
                      <input type="submit" name="button2"
                              class="button" value="Button2" />
-                 </form>-->
+                 </form>
               </div>
             </div>
           </div>
