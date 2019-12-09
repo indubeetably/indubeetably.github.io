@@ -25,17 +25,29 @@
   }
   </script>
   
-  <!--<?php
-      if(array_key_exists('button1', $_POST)) {
-              button1();
+  <script>
+  function msgButton1() {
+    alert("Check to see if function is triggered");
+  }
+  </script>
+  
+  <script>
+  function msgButton2() {
+    alert("Check to see if function is triggered");
+  }
+  </script>
+  
+  <?php
+      if(array_key_exists('actuator', $_POST)) {
+              msgButton1();
           }
-          else if(array_key_exists('button1', $_POST)) {
-              button2();
+          else if(array_key_exists('actuator', $_POST)) {
+              msgButton2();
           }
-          function button1() {
+          function msgButton1() {
               echo "This is actuator that is selected";
           }
-          function button2() {
+          function msgButton2() {
               echo "This is actuator that is selected again";
           }
       ?>
