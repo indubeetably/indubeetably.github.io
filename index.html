@@ -44,8 +44,9 @@
   }
   </script>
   
+  
   <?php
-      if(array_key_exists('actuator', 1)) {
+      if('actuator' == 1) {
               function printCSV();
           }
           else if(array_key_exists('actuator', 1)) {
@@ -146,7 +147,9 @@
               <div class="input-group-append">
                 <button class="btn btn-secondary" type="button"  onclick="setBoolean()">Click for Predictions!</button>
             </form>
-                 <!-- <button onclick="getBallerPredictions()" name="actuator" onclick="printCSV()">Click for Predictions!</button>-->
+                 <!--<button class="btn btn-secondary" type="button"  onclick="setBoolean()">Click for Predictions!</button>
+                 
+                 <button onclick="getBallerPredictions()" name="actuator" onclick="printCSV()">Click for Predictions!</button>-->
                  <!-- <input type="button" onclick="getBallerPredictions()" value="Click Me!">
                  <form method="post">
                      <input type="submit" name="button1"
