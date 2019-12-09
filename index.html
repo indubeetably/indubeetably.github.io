@@ -17,7 +17,7 @@
    <th>phone</th>
   </tr>
 HERE;
-  $data = file("contacts.csv");
+  $data = file("HallOfFame.csv");
   foreach ($data as $line){
   $lineArray = explode("t", $line);
   list($fName, $lName, $email, $phone) = $lineArray;
