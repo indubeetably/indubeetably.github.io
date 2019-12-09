@@ -38,12 +38,11 @@
   </script>-->
   
   <?php
-      if(isset($_POST['actuator']))
-      //if(array_key_exists('actuator', $_POST)) {
+      
+      if(array_key_exists('actuator', $_POST)) {
               function printCSV();
           }
-        else if(isset($_POST['actuator']))
-          //else if(array_key_exists('actuator', $_POST)) {
+          else if(array_key_exists('actuator', $_POST)) {
               function printCSV1();
           }
           function function printCSV() {
