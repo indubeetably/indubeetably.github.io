@@ -64,7 +64,7 @@
     $(document).ready(function(){
       $("#csv-file").change(handleFileSelect);
     });
-  </script>
+  </script> -->
   
   <script>
       function setBoolean() {
@@ -81,11 +81,12 @@
           console.log(results);
           data = results.data;
         }
-      });-->
+      });
+      }
+      </script>
       
       
-      <script>
-      papa.parse(file, {
+      <!--papa.parse(file, {
           worker: true, // Don't bog down the main thread if its a big file
           step: function(result) {
               // do stuff with result
@@ -96,7 +97,7 @@
           }
       });
       }
-      </script>
+      </script>-->
       
   
 
