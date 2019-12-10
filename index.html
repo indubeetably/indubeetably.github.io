@@ -73,7 +73,7 @@
       const file = fs.createReadStream('HallOfFame.csv');
       var count = 0; // cache the running count
       
-      Papa.parse('../challanges.csv', {
+      Papa.parse(file, {
         header: true,
         download: true,
         dynamicTyping: true,
